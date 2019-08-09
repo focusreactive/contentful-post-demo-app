@@ -5,16 +5,19 @@
   "scripts": {
     "dev": "next src",
     "build": "next build src",
-    "start": "next start src"
+    "start": "next start src",
+    "update-mocks": "node ./scripts/update-mocks.js"
   },
   "license": "MIT",
   "dependencies": {
+    "@contentful/rich-text-react-renderer": "^13.4.0",
+    "@contentful/rich-text-types": "^13.4.0",
     "@emotion/core": "^10.0.14",
     "@emotion/styled": "^10.0.14",
     "@reach/dialog": "^0.2.9",
     "@reach/menu-button": "^0.1.18",
     "@zeit/next-css": "^1.0.1",
-    "contentful": "^7.8.2",
+    "contentful": "^7.9.1",
     "emotion-theming": "^10.0.14",
     "next": "^9.0.2",
     "react": "^16.8.6",

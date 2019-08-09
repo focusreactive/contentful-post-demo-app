@@ -1,0 +1,213 @@
+{
+  "sys": {
+    "space": {
+      "sys": {
+        "type": "Link",
+        "linkType": "Space",
+        "id": "wgfmv188iue8"
+      }
+    },
+    "type": "Entry",
+    "id": "7iaB95RCl0IH3Z73ON1hBq",
+    "contentType": {
+      "sys": {
+        "type": "Link",
+        "linkType": "ContentType",
+        "id": "page"
+      }
+    },
+    "revision": 0,
+    "createdAt": "2019-08-09T12:35:57.620Z",
+    "updatedAt": "2019-08-09T17:24:21.638Z",
+    "environment": {
+      "sys": {
+        "id": "master",
+        "type": "Link",
+        "linkType": "Environment"
+      }
+    },
+    "locale": "en-US"
+  },
+  "fields": {
+    "url": "leaders",
+    "title": "Leaders",
+    "seoTitle": "leaders",
+    "seoDescription": "project leaders",
+    "template": {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "wgfmv188iue8"
+          }
+        },
+        "type": "Entry",
+        "id": "Xq2AzVuXByKktYgA14KRK",
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "templateStandard"
+          }
+        },
+        "revision": 0,
+        "createdAt": "2019-08-09T12:38:31.521Z",
+        "updatedAt": "2019-08-09T18:07:18.705Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "title": "Leaders Template",
+        "content": [
+          {
+            "sys": {
+              "space": {
+                "sys": {
+                  "type": "Link",
+                  "linkType": "Space",
+                  "id": "wgfmv188iue8"
+                }
+              },
+              "type": "Entry",
+              "id": "35rA66fYFiQDxuj0do53Nq",
+              "contentType": {
+                "sys": {
+                  "type": "Link",
+                  "linkType": "ContentType",
+                  "id": "componentDescription"
+                }
+              },
+              "revision": 0,
+              "createdAt": "2019-08-09T18:06:08.715Z",
+              "updatedAt": "2019-08-09T18:06:53.695Z",
+              "environment": {
+                "sys": {
+                  "id": "master",
+                  "type": "Link",
+                  "linkType": "Environment"
+                }
+              },
+              "locale": "en-US"
+            },
+            "fields": {
+              "title": "Leader Top Block",
+              "description": {
+                "nodeType": "document",
+                "data": {},
+                "content": [
+                  {
+                    "nodeType": "paragraph",
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "Description Title",
+                        "marks": [],
+                        "data": {}
+                      }
+                    ],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "paragraph",
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "description text",
+                        "marks": [],
+                        "data": {}
+                      }
+                    ],
+                    "data": {}
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sys": {
+              "space": {
+                "sys": {
+                  "type": "Link",
+                  "linkType": "Space",
+                  "id": "wgfmv188iue8"
+                }
+              },
+              "type": "Entry",
+              "id": "1xM7DEuehktohHSENi0lPi",
+              "contentType": {
+                "sys": {
+                  "type": "Link",
+                  "linkType": "ContentType",
+                  "id": "componentQuote"
+                }
+              },
+              "revision": 0,
+              "createdAt": "2019-08-09T18:07:18.074Z",
+              "updatedAt": "2019-08-09T18:08:04.368Z",
+              "environment": {
+                "sys": {
+                  "id": "master",
+                  "type": "Link",
+                  "linkType": "Environment"
+                }
+              },
+              "locale": "en-US"
+            },
+            "fields": {
+              "title": "Leader page qoute",
+              "text": "Lorem Ipsum",
+              "author": "Lorem",
+              "role": "Generator",
+              "avatar": {
+                "sys": {
+                  "space": {
+                    "sys": {
+                      "type": "Link",
+                      "linkType": "Space",
+                      "id": "wgfmv188iue8"
+                    }
+                  },
+                  "type": "Asset",
+                  "id": "3BPPO9W2UZneC6wVi6RRXW",
+                  "revision": 0,
+                  "createdAt": "2019-08-09T18:08:03.959Z",
+                  "updatedAt": "2019-08-09T18:08:31.232Z",
+                  "environment": {
+                    "sys": {
+                      "id": "master",
+                      "type": "Link",
+                      "linkType": "Environment"
+                    }
+                  },
+                  "locale": "en-US"
+                },
+                "fields": {
+                  "title": "bruce",
+                  "file": {
+                    "url": "//images.ctfassets.net/wgfmv188iue8/3BPPO9W2UZneC6wVi6RRXW/cba3453bad85f0da474bc745adedce5b/bruse.jpg",
+                    "details": {
+                      "size": 36858,
+                      "image": {
+                        "width": 630,
+                        "height": 630
+                      }
+                    },
+                    "fileName": "bruse.jpg",
+                    "contentType": "image/jpeg"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}
