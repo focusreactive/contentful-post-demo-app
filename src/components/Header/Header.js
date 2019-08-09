@@ -2,9 +2,9 @@ import React from 'react';
 
 import * as styled from './Header.styled';
 
-const Header = () => (
-  <styled.Container>
-    <h1>header</h1>
+const Header = ({ title, background }) => (
+  <styled.Container background={background}>
+    <h1>{title}</h1>
   </styled.Container>
 );
 

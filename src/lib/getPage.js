@@ -1,62 +1,29 @@
 import { getEntry } from './contentful-client';
-import { selectImages, selectVideos, selectComponents } from './cms-selectors';
-
-// const getIncludedFile = selector => includedFiles => fname => {
-//   try {
-//     const files = selector(includedFiles);
-//     const file = files.find(({ fileName }) => fileName === fname);
-//     return file || null;
-//   } catch (err) {
-//     if (
-//       process.env.MACHINE === 'local' ||
-//       process.env.NODE_ENV !== 'production'
-//     ) {
-//       console.error(err);
-//     }
-//     return null;
-//   }
-// };
-
-// export const getIncludedImage = getIncludedFile(selectImages);
-// export const getIncludedVideo = getIncludedFile(selectVideos);
-
-// export const getIncludedEntry = includedEntries => entryTitle => {
-//   try {
-//     const entries = selectComponents()(includedEntries);
-//     const entry = entries.find(({ fields: { title } }) => title === entryTitle);
-//     return entry || null;
-//   } catch (err) {
-//     if (
-//       process.env.MACHINE === 'local' ||
-//       process.env.NODE_ENV !== 'production'
-//     ) {
-//       console.error(err);
-//     }
-//     return null;
-//   }
-// };
+import { selectImages, selectTemplate } from './cms-selectors';
 
 export const getPage = async entryId => {
   const customPage = await getEntry(entryId);
 
   const {
+    url,
+    title,
     seoTitle,
     seoDescription,
-    url,
-    pageData,
     headerImage,
-    title,
-    // includedFiles,
-    // includedEntries,
+    template,
   } = customPage.fields;
-  const bgImage = selectImages([headerImage])[0];
+  const headerBackground = selectImages([headerImage])[0];
 
-  const head = {
+  const page = {
     title: seoTitle,
     description: seoDescription,
     canonical: `/${url}`,
   };
-  const hero = { bgImage: bgImage && bgImage.url, title };
+  const header = {
+    background: headerBackground && headerBackground.url,
+    title,
+  };
+  const content = selectTemplate(template);
 
-  return { head, hero, pageData, includedFiles, includedEntries };
+  return { page, header, content };
 };

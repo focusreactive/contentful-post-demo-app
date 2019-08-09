@@ -92,3 +92,14 @@ export const selectComponents = (
     return [];
   }
 };
+
+export const selectTemplate = template => {
+  try {
+    return {
+      templateType: template.sys.contentType.sys.id,
+      data: template.fields,
+    };
+  } catch (err) {
+    return {};
+  }
+};

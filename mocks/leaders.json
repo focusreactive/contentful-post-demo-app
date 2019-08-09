@@ -18,7 +18,7 @@
     },
     "revision": 0,
     "createdAt": "2019-08-09T12:35:57.620Z",
-    "updatedAt": "2019-08-09T17:24:21.638Z",
+    "updatedAt": "2019-08-09T18:20:38.743Z",
     "environment": {
       "sys": {
         "id": "master",
@@ -31,6 +31,45 @@
   "fields": {
     "url": "leaders",
     "title": "Leaders",
+    "headerImage": {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "wgfmv188iue8"
+          }
+        },
+        "type": "Asset",
+        "id": "7FAt28YOMTVUbY8Dslyfdf",
+        "revision": 0,
+        "createdAt": "2019-08-09T18:20:38.176Z",
+        "updatedAt": "2019-08-09T18:21:54.541Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "title": "city-bridge",
+        "file": {
+          "url": "//images.ctfassets.net/wgfmv188iue8/7FAt28YOMTVUbY8Dslyfdf/3983ca9b098912826aa8a69f4f894b24/amsterdam-evening-city-lights-canal-bridge.jpg",
+          "details": {
+            "size": 483108,
+            "image": {
+              "width": 1920,
+              "height": 1200
+            }
+          },
+          "fileName": "amsterdam-evening-city-lights-canal-bridge.jpg",
+          "contentType": "image/jpeg"
+        }
+      }
+    },
     "seoTitle": "leaders",
     "seoDescription": "project leaders",
     "template": {
