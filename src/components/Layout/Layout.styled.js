@@ -57,10 +57,17 @@ export const Header = styled.header`
   height: 20hv;
 `;
 
+export const ContentContainer = styled.div`
+  padding: 20px ${({ theme }) => theme.hPadding}px;
+`;
+
 export const Main = styled.main`
   flex-grow: 1;
   height: auto;
-  padding: 0px ${({ theme }) => theme.hPadding}px;
+  padding: 0px;
+  ${ContentContainer}:nth-child(even) {
+    background-color: ${({ theme }) => theme.backgroundPrimaryAlt};
+  }
 `;
 
 export const Footer = styled.footer`

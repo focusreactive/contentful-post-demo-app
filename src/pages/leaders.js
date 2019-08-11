@@ -6,10 +6,10 @@ import Layout from '../components/Layout';
 
 const entryId = '7iaB95RCl0IH3Z73ON1hBq';
 
-const App = ({ page, header, content }) => {
+const App = ({ page, header, content, query, isServer }) => {
   return (
     <Layout page={page} header={header}>
-      {renderTemplate(content)}
+      {renderTemplate(content, { query, isServer })}
     </Layout>
   );
 };

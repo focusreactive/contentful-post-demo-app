@@ -103,3 +103,38 @@ export const selectTemplate = template => {
     return {};
   }
 };
+
+export const selectEntryType = entry => {
+  try {
+    return entry.sys.contentType.sys.id;
+  } catch (err) {
+    return null;
+  }
+};
+
+const componentReference = 'componentReference';
+const componentCustom = 'componentCustom';
+const referredComponents = [componentReference, componentCustom];
+
+export const selectComponentReference = component => {
+  try {
+    const contentType = selectEntryType(component);
+    if (referredComponents.includes(contentType)) {
+      return component.fields.type;
+    }
+    return contentType;
+  } catch (err) {
+    return null;
+  }
+};
+
+export const selectComponentProps = component => {
+  const contentType = selectEntryType(component);
+  if (referredComponents.includes(contentType)) {
+    const { type, componentData, ...props } = component.fields;
+    return { ...props, ...componentData };
+  }
+  return component.fields;
+};
+
+export const selectEntryId = entry => entry.sys.id;

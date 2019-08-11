@@ -1,5 +1,6 @@
 export const theme = {
   backgroundPrimary: '#292929',
+  backgroundPrimaryAlt: '#353535',
   backgroundSecondary: '#181818',
   accentPrimary: '#13cf2e',
   accentSecondary: '#079240',
