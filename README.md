@@ -2,7 +2,7 @@
 
 ## Post Complementary Application
 
-The post you can read [here](medium.com)
+The post you can read [here](https://medium.com/@FocusReactive/headless-cms-contentful-and-nextjs-how-to-create-a-modern-react-application-part-1-fdd772073a5d)
 
 ---
 ![Contentful Logo](docs/contentful-logo.svg) Contentful - Modern headless CMS promoting API-first and cloud-native approaches
