@@ -8,7 +8,7 @@
       }
     },
     "type": "Entry",
-    "id": "7iaB95RCl0IH3Z73ON1hBq",
+    "id": "QSltB1971O8GOaxsoYgIF",
     "contentType": {
       "sys": {
         "type": "Link",
@@ -17,8 +17,8 @@
       }
     },
     "revision": 0,
-    "createdAt": "2019-08-09T12:35:57.620Z",
-    "updatedAt": "2019-08-09T19:13:26.484Z",
+    "createdAt": "2019-08-18T14:19:13.222Z",
+    "updatedAt": "2019-08-18T17:50:53.426Z",
     "environment": {
       "sys": {
         "id": "master",
@@ -29,48 +29,9 @@
     "locale": "en-US"
   },
   "fields": {
-    "url": "leaders",
-    "title": "Leaders ***",
-    "headerImage": {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "wgfmv188iue8"
-          }
-        },
-        "type": "Asset",
-        "id": "31xDjRXKzD99VGRCU9X6dr",
-        "revision": 0,
-        "createdAt": "2019-08-09T19:13:26.042Z",
-        "updatedAt": "2019-08-09T19:19:15.851Z",
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "locale": "en-US"
-      },
-      "fields": {
-        "title": "header-leaders",
-        "file": {
-          "url": "//images.ctfassets.net/wgfmv188iue8/31xDjRXKzD99VGRCU9X6dr/c862d70528d866c0c0aafb5fdab4129a/header-leaders.png",
-          "details": {
-            "size": 403634,
-            "image": {
-              "width": 920,
-              "height": 391
-            }
-          },
-          "fileName": "header-leaders.png",
-          "contentType": "image/png"
-        }
-      }
-    },
-    "seoTitle": "leaders",
+    "url": "about",
+    "title": "About",
+    "seoTitle": "about",
     "seoDescription": "project leaders",
     "template": {
       "sys": {

@@ -3,10 +3,10 @@
 const { createClient } = require('contentful');
 
 const { SPACE, DELIVERY_TOKEN, PREVIEW_TOKEN } = require('./contentful-config');
-// const { getLocalMocks } = require('./getLocalMocks');
+const { getLocalMocks } = require('./getLocalMocks');
 
 const isProduction = process.env.NODE_ENV === 'production';
-// const isLocalMocks = !!process.env.LOCAL;
+const isLocalMocks = !!process.env.LOCAL;
 
 const contentfulClient = createClient({
   host: isProduction ? 'cdn.contentful.com' : 'preview.contentful.com',
@@ -15,10 +15,11 @@ const contentfulClient = createClient({
 });
 
 const getEntry = entryId => {
-  // if (isLocalMocks) {
-  //   const entryData = getLocalMocks(entryId);
-  //   return entryData;
-  // }
+  if (isLocalMocks) {
+    console.log('Offline content');
+    const entryData = getLocalMocks(entryId);
+    return entryData;
+  }
   return contentfulClient.getEntry(entryId, { include: 2 });
 };
 

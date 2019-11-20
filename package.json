@@ -4,6 +4,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "next src",
+    "server": "NODE_ENV=development node server",
+    "server:mock": "NODE_ENV=development LOCAL=true node server",
     "build": "next build src",
     "start": "next start src",
     "update-mocks": "node ./scripts/update-mocks.js"

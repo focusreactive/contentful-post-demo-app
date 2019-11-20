@@ -5,8 +5,8 @@ import { ContentContainer } from '../Layout/Layout.styled';
 
 const Debug = () => {
   const router = useRouter();
-  const { log } = console;
-  log('Debug -> router', router);
+  // const { log } = console;
+  // log('Debug -> router', router);
   return (
     <ContentContainer>
       <code>{JSON.stringify(router, null, 2)}</code>

@@ -1,8 +1,11 @@
-const jsonFiles = require.context('../../mocks', false, /\.json$/);
+let mocks = [];
 
-const mocks = jsonFiles.keys().map(file => jsonFiles(file));
-
-console.log('TCL: jsonFiles', mocks);
+try {
+  const jsonFiles = require.context('../../mocks', false, /\.json$/);
+  mocks = jsonFiles.keys().map(file => jsonFiles(file));
+} catch (err) {
+  console.warn(err);
+}
 
 const byId = id => mock => {
   try {
