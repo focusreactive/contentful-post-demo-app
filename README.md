@@ -40,3 +40,7 @@ yarn server
 [Oleg Proskurin](https://twitter.com/UsulPro)
 
 Senior Software Engineer @ [FocusReactive](focusreactive.com)
+
+
+### Import into contentful
+In order to import into contentful update package.json and replace CONTENTFUL_SPACE_ID with your Space ID and CFPAT-CM=API-KEY with you Content Management API Key. 
